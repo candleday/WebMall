@@ -97,7 +97,7 @@
     }
 </script>
 
-<style scoped>
+<style>
   .text {
     font-size: 14px;
   }
@@ -168,14 +168,9 @@
     transform: translateY(3%);
     border-radius: 4px
   }
-
-  .el-step__title.is-process {
-    font-weight: 700;
-    color: #303133;
-    font-size: 16px;
-    line-height: 38px;
+  .el-step__title{
     position: relative;
     left: -35px;
+    z-index: 100000000;
   }
-
 </style>
