@@ -1,0 +1,19 @@
+server:
+  port: 8101
+
+spring:
+  application:
+    name: hystrix-dashboard
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka/
+  instance:
+    instance-id: ${spring.application.name}
+
+info:
+  remark: 监控服务
+  author: candle

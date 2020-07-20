@@ -1,0 +1,10 @@
+# Project exclude paths
+/common-api/target/
+/consumer-80/target/
+/eureka-server/target/
+/goods-8001/target/
+/hystrix-dashboard/target/
+/marketing-8002/target/
+/order-8003/target/
+/proxy-zuul/target/
+/mall_admin/

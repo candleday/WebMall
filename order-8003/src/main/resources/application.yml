@@ -1,0 +1,39 @@
+server:
+  port: 8003
+
+spring:
+  application:
+    name: order
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.107.155.238:3306/webmall?useSSL=false
+    username: root
+    password: root
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka/
+  instance:
+    instance-id: ${spring.application.name}-${server.port}
+
+info:
+  remark: 这是一个服务提供者，提供增删改查
+  author: candle
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'hystrix.stream'
+
+logging:
+  level:
+    cn.lingnan.dao: debug
