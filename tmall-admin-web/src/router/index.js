@@ -62,7 +62,20 @@ const routes = [
         name: 'Brand',
         // 懒加载，只有使用的时候才会调用
         component: () => import('../views/pms/Brand.vue')
+      },
+      {
+        path: '/oms/order',
+        name: 'Order',
+        // 懒加载，需要使用的时候才加载
+        component: () => import('../views/oms/order.vue')
+      },
+      {
+        path: '/oms/order',
+        name: 'Order',
+        // 懒加载，需要使用的时候才加载
+        component: () => import('../views/oms/order.vue')
       }
+
     ]
   }
 ]
