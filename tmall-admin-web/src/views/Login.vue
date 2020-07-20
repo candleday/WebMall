@@ -124,7 +124,7 @@ export default {
 
 <style scoped>
 .login-card {
-  width: 100%;
+  width: 400px;
   margin: auto;
   transform: translateY(50%);
 }
@@ -133,4 +133,13 @@ export default {
   width: 100%;
 }
 
+.login-btn .el-button {
+  width: 50%;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  transform: translateY(100%);
+}
 </style>
